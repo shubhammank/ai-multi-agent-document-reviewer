@@ -1,0 +1,33 @@
+@startuml
+title End-to-End Review Pipeline
+
+start
+
+:Upload PDF/DOCX;
+:Ingest File;
+:Extract Text + Metadata;
+
+:Semantic Chunking;
+:Boundary Detection;
+:Recursive Splitting;
+
+:Embedding Generation;
+:Store in ChromaDB;
+
+:Routing Engine;
+if (Category?) then (Recommendation)
+    :Recommendation Agent;
+elseif (Evidence)
+    :Evidence Agent;
+elseif (Clarification)
+    :Clarification Agent;
+else (Proofreading)
+    :Proofreading Agent;
+endif
+
+:Merge Agent Outputs;
+:Return JSON;
+
+stop
+
+@enduml

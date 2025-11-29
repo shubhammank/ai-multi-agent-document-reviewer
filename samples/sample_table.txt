@@ -1,0 +1,9 @@
+Energy Table
+
+Category | 2022 | 2023 | 2024
+Electricity | 120 kWh | 140 kWh | 160 kWh
+Fuel Oil | 50 L | 45 L | 40 L
+Gas | 200 m3 | 210 m3 | 225 m3
+
+Observation:
+Consumption increased slightly for most categories.

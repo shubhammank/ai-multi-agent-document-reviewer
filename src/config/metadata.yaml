@@ -1,0 +1,14 @@
+keep_original_metadata: true
+include_source_items: true
+
+fields:
+  - chunk_index
+  - page_number
+  - paragraph_index
+  - table_index
+  - row_index
+
+context:
+  add_left: true
+  add_right: true
+  window: 30

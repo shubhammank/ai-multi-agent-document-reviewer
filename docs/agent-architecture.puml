@@ -1,0 +1,25 @@
+@startuml
+
+title Agent Architecture
+
+package "Agents" {
+    class AgentBase {
+        +call_llm()
+        +run()
+        -system_prompt
+        -backend
+        -model
+    }
+
+    class RecommendationAgent
+    class EvidenceAgent
+    class ClarificationAgent
+    class ProofreadingAgent
+}
+
+AgentBase <|-- RecommendationAgent
+AgentBase <|-- EvidenceAgent
+AgentBase <|-- ClarificationAgent
+AgentBase <|-- ProofreadingAgent
+
+@enduml

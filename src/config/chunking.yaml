@@ -1,0 +1,22 @@
+chunk_size: 500
+min_chunk: 120
+overlap: 50
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
+
+semantic_density:
+  enabled: true
+  keywords:
+    - emission
+    - baseline
+    - target
+    - risk
+    - policy
+    - sustainability
+
+boundary_detection:
+  heading_rules:
+    min_words: 1
+    max_words: 5
+    uppercase: true
+  table_is_boundary: true
+  density_jump: 0.10

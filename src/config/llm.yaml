@@ -1,0 +1,7 @@
+llm_backend: openai
+llm_model: gpt-4o-mini
+openai_api_key: ${OPENAI_API_KEY}
+anthropic_api_key: ${ANTHROPIC_API_KEY}
+
+embedding_backend: sentence-transformers
+embedding_model: sentence-transformers/all-MiniLM-L6-v2
